@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: recipegram_production
   username: recipegram
   password: <%= ENV['RECIPEGRAM_DATABASE_PASSWORD'] %>
