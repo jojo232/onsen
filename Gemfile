@@ -66,6 +66,12 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem "bulma-rails"
 
+# for image uploader with AWS S3
+gem 'carrierwave'
+gem 'fog-aws'
+gem 'fog-local'
+
 group :production do
   gem 'pg', '>= 0.18', '< 2.0'
 end
+
